@@ -1,0 +1,1 @@
+Upload the prepared website package content via the ZIP archive. The actual repository upload includes the web pages, stylesheet, illustrations, sitemap, and book-cover artwork.
