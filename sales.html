@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="The Four Obstacles to Hold'em Success by Jack Powers — a practical framework for better poker decisions.">
+<title>The Four Obstacles to Hold'em Success | Jack Powers</title>
+<style>
+:root{
+  --ink:#f5f1e8;--muted:#b9b4aa;--bg:#101411;--panel:#18211b;--panel2:#202b23;
+  --gold:#d6b56d;--gold2:#f0d99e;--line:rgba(240,217,158,.2);--green:#284b38;
+  --max:1080px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.72 Georgia,"Times New Roman",serif}
+a{color:var(--gold2)}
+.wrap{width:min(var(--max),calc(100% - 36px));margin:auto}
+.preview{background:#f3e7c7;color:#2b261b;text-align:center;padding:9px 14px;font:700 12px/1.4 Arial,sans-serif;letter-spacing:.08em;text-transform:uppercase}
+header{border-bottom:1px solid var(--line);background:linear-gradient(120deg,#0c100d,#1a281e)}
+nav{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:20px 0;font:13px Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase}
+.brand{font-weight:700;color:var(--gold2)}
+nav a{text-decoration:none;color:var(--muted)}
+.hero{padding:74px 0 68px;background:radial-gradient(ellipse at 75% 30%,rgba(91,126,88,.24),transparent 42%),linear-gradient(135deg,#101612,#17241b)}
+.hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:48px;align-items:center}
+.kicker{font:700 12px Arial,sans-serif;letter-spacing:.22em;text-transform:uppercase;color:var(--gold)}
+h1,h2,h3{line-height:1.15;margin:0 0 18px}
+h1{font-size:clamp(42px,6vw,70px);letter-spacing:-.035em;max-width:760px}
+h1 span{color:var(--gold2)}
+.subtitle{font:italic 22px/1.4 Georgia,serif;color:#d6d1c6;max-width:650px;margin:0 0 25px}
+.hero p{color:#d0ccc2;max-width:680px}
+.cta{display:inline-block;background:var(--gold);color:#17170f;text-decoration:none;padding:15px 24px;border-radius:3px;font:700 13px Arial,sans-serif;letter-spacing:.08em;text-transform:uppercase;margin:14px 10px 0 0}
+.cta:hover{background:var(--gold2)}
+.cta.secondary{background:transparent;border:1px solid var(--gold);color:var(--gold2)}
+.book-art{min-height:390px;display:flex;justify-content:center;align-items:center;perspective:1000px}
+.book{width:245px;height:340px;padding:26px 22px;background:linear-gradient(145deg,#253c2d,#101812 70%);border:1px solid #71816b;box-shadow:22px 24px 45px #050806;transform:rotateY(-13deg) rotateZ(-2deg);position:relative}
+.book:before{content:"";position:absolute;left:0;top:0;bottom:0;width:13px;background:linear-gradient(90deg,#0b100c,#415a43)}
+.book .mini{font:10px Arial,sans-serif;letter-spacing:.18em;color:var(--gold);text-align:center;margin:20px 0 30px}
+.book h2{font:bold 27px/1.12 Georgia,serif;text-align:center;color:#f3e6c5;margin:0 0 18px}
+.book .rule{width:60px;height:2px;background:var(--gold);margin:20px auto}
+.book .book-sub{font:italic 12px/1.5 Georgia,serif;text-align:center;color:#d7d2c6}
+.book .author{position:absolute;bottom:24px;left:0;right:0;text-align:center;font:11px Arial,sans-serif;letter-spacing:.2em;color:var(--gold2)}
+main section{padding:70px 0;border-bottom:1px solid var(--line)}
+h2{font-size:clamp(30px,4vw,43px);letter-spacing:-.02em}
+h3{font-size:24px;color:var(--gold2)}
+.lead{font-size:21px;color:#e2ded4;max-width:820px}
+.muted{color:var(--muted)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.four{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:30px}
+.card{background:var(--panel);border:1px solid var(--line);padding:26px;border-radius:5px}
+.card .num{font:700 12px Arial,sans-serif;letter-spacing:.16em;color:var(--gold);text-transform:uppercase}
+.card h3{margin:10px 0}
+.card p{margin:0;color:#d0ccc2}
+.sample{background:#f0eadc;color:#26251f;padding:36px clamp(22px,5vw,60px);border-radius:5px;max-width:850px;margin:30px auto 0;box-shadow:0 18px 50px #05080655}
+.sample .sample-label{font:700 11px Arial,sans-serif;letter-spacing:.18em;text-transform:uppercase;color:#7a6232}
+.sample h3{color:#20251f;font-size:27px;margin:12px 0 20px}
+.sample p{color:#33332d}
+.sample .sample-end{border-top:1px solid #c8c0af;padding-top:15px;margin-top:20px;font:italic 14px Georgia,serif;color:#766b58}
+ul.clean{list-style:none;padding:0;margin:22px 0}
+ul.clean li{padding:10px 0 10px 30px;position:relative;border-bottom:1px solid var(--line)}
+ul.clean li:before{content:"◆";position:absolute;left:3px;top:12px;color:var(--gold);font-size:12px}
+.toc{columns:2;column-gap:50px;padding-left:22px;color:#d6d1c6}
+.toc li{break-inside:avoid;padding:5px 0}
+.quote{font-size:25px;line-height:1.45;color:var(--gold2);border-left:3px solid var(--gold);padding:8px 0 8px 24px;margin:30px 0}
+.buy{background:linear-gradient(135deg,#1b2b20,#101612);text-align:center;padding:68px 24px;border:1px solid var(--line);border-radius:6px}
+.buy h2{max-width:760px;margin:0 auto 18px}
+.buy p{max-width:680px;margin:0 auto;color:#d0ccc2}
+.note{font:13px/1.5 Arial,sans-serif;color:var(--muted);margin-top:18px}
+footer{padding:30px 0 48px;color:var(--muted);font:13px/1.6 Arial,sans-serif}
+@media(max-width:760px){.hero-grid,.two{grid-template-columns:1fr}.book-art{min-height:340px}.four{grid-template-columns:1fr}.toc{columns:1}.hero{padding:54px 0}.book{transform:none}nav .navlinks{display:none}}
+</style>
+</head>
+<body>
+<div class="preview">The complete book is available on Amazon</div>
+<header>
+  <div class="wrap">
+    <nav>
+      <div class="brand">JACK POWERS · POKER STRATEGY</div>
+      <div class="navlinks"><a href="#framework">The Framework</a> &nbsp; · &nbsp; <a href="#sample">Read a Sample</a> &nbsp; · &nbsp; <a href="#contents">Inside the Book</a></div>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="kicker">A practical framework for better poker decisions</div>
+      <h1>The Four Obstacles to <span>Hold'em Success</span></h1>
+      <p class="subtitle">Position. Pressure. Hand Strength. Risk.</p>
+      <p>You're not always losing because you have bad cards. Sometimes you're losing because you haven't recognized the obstacles shaping the decision in front of you.</p>
+      <p>This book introduces a straightforward way to examine the situations that influence every Texas Hold'em hand—and to think more deliberately before committing your chips.</p>
+      <a class="cta" href="https://www.amazon.com/dp/B0HRSM39F9" target="_blank" rel="noopener">View the Book on Amazon</a>
+      <a class="cta secondary" href="#sample">Read a Sample</a>
+    </div>
+    <div class="book-art" aria-label="Decorative book-cover mockup">
+      <div class="book">
+        <div class="mini">A PRACTICAL FRAMEWORK</div>
+        <h2>THE FOUR<br>OBSTACLES<br>TO HOLD'EM<br>SUCCESS</h2>
+        <div class="rule"></div>
+        <div class="book-sub">A Practical Framework<br>for Better Poker Decisions</div>
+        <div class="author">JACK POWERS</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<main>
+<section>
+  <div class="wrap">
+    <p class="kicker">The problem</p>
+    <h2>Knowing the Rules Isn't the Same as Knowing How to Play Well.</h2>
+    <p class="lead">A player can know the value of every poker hand and still struggle with the decisions that determine how that hand should be played.</p>
+    <div class="two">
+      <div>
+        <p>Players learn the rules. They memorize starting hands. They study strategies and watch experienced players. But when they sit down at the table, familiar problems keep appearing.</p>
+        <ul class="clean">
+          <li>Entering pots from unfavorable positions.</li>
+          <li>Reacting poorly when opponents apply pressure.</li>
+          <li>Overestimating the strength of a hand.</li>
+          <li>Taking unnecessary risks—or missing worthwhile opportunities.</li>
+        </ul>
+      </div>
+      <div>
+        <p>These aren't isolated problems. They are recurring challenges that influence decisions throughout a game of Texas Hold'em.</p>
+        <p>The book organizes those challenges into four obstacles. The purpose isn't to promise effortless wins. It's to give the reader a consistent framework for recognizing what is happening and evaluating the choices available.</p>
+        <div class="quote">The goal is not simply to know what action is possible. It is to understand whether that action makes sense under the circumstances.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="framework">
+  <div class="wrap">
+    <p class="kicker">The four-obstacle framework</p>
+    <h2>Four Challenges. One More Deliberate Way to Think About the Game.</h2>
+    <p class="lead">Each obstacle affects the others. Understanding how they work together is central to the book.</p>
+    <div class="four">
+      <article class="card"><div class="num">Obstacle 01</div><h3>Position</h3><p>Where you sit in relation to the dealer button affects when you act and how much information you have. Poor positional understanding can put you at a disadvantage before the hand has really begun.</p></article>
+      <article class="card"><div class="num">Obstacle 02</div><h3>Pressure</h3><p>Bets and raises influence decisions. Learn to recognize when opponents are applying pressure and consider how to respond without becoming too passive, too aggressive, or too easily manipulated.</p></article>
+      <article class="card"><div class="num">Obstacle 03</div><h3>Hand Strength</h3><p>A hand that looks strong isn't necessarily strong enough to win. Its value changes with the community cards, betting action, number of opponents, and possible opposing holdings.</p></article>
+      <article class="card"><div class="num">Obstacle 04</div><h3>Risk</h3><p>Every decision involving chips carries risk. Consider what you must invest, what you could gain, what you could lose, and whether continuing is justified by the situation.</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="sample">
+  <div class="wrap">
+    <p class="kicker">Read an excerpt from the book</p>
+    <h2>Before You Decide, Understand What You're Facing.</h2>
+    <p class="muted">The following is an excerpt from the book's actual Introduction.</p>
+    <div class="sample">
+      <div class="sample-label">Book excerpt · Introduction</div>
+      <h3>What Is Keeping You from Hold'em Success?</h3>
+      <p>Every poker player wants to make better decisions. They want to win more pots, avoid costly mistakes, recognize opportunities, and develop the ability to make the right move when it matters most.</p>
+      <p>Yet many players struggle to make consistent progress.</p>
+      <p>They learn the rules. They memorize starting hands. They study different strategies. They watch experienced players and try to understand what makes them successful.</p>
+      <p>But when they sit down at the table, something still gets in the way.</p>
+      <p>They enter pots from unfavorable positions. They don't know how to respond when opponents apply pressure. They overestimate the strength of their hands. They take unnecessary risks or fail to recognize when a risk is worth taking.</p>
+      <p>These aren't isolated problems. They are recurring obstacles that influence decisions throughout every game of Texas Hold'em.</p>
+      <p>And until you understand them, they can continue to interfere with your progress.</p>
+      <h3>The Four Obstacles</h3>
+      <p>There are four fundamental obstacles that every Hold'em player must learn to recognize and overcome.</p>
+      <p><strong>1. Position.</strong> Where you sit in relation to the dealer button determines when you act and how much information you have when making decisions. Poor positional understanding can put you at a disadvantage before the hand has really begun.</p>
+      <p><strong>2. Pressure.</strong> Poker is a game of action and reaction. Opponents use bets and raises to influence your decisions. If you don't understand how pressure works, you can become too passive, too aggressive, or too easily manipulated.</p>
+      <p><strong>3. Hand Strength.</strong> A hand that looks strong isn't necessarily strong enough to win. Its value depends on the community cards, the betting action, the number of opponents, and the possibilities available to them.</p>
+      <p><strong>4. Risk.</strong> Every decision involves risk. How many chips should you commit? What could you gain? What could you lose? When should you protect your chips, and when should you be willing to put them at risk?</p>
+      <p>These four obstacles are connected. Position can influence how you respond to pressure. Pressure can change how you evaluate your hand. Hand strength affects how much risk you should be willing to accept. And risk can determine whether a decision is worth making at all.</p>
+      <div class="sample-end">End of sample excerpt. The complete book develops each obstacle individually and then brings them together in practical poker situations.</div>
+    </div>
+    <div style="text-align:center;margin-top:28px"><a class="cta" href="https://www.amazon.com/dp/B0HRSM39F9" target="_blank" rel="noopener">Continue with the Complete Book on Amazon</a></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="kicker">What the book covers</p>
+    <h2>From Recognizing the Obstacles to Applying Them at the Table.</h2>
+    <p class="lead">The book examines each challenge separately, then shows how the four considerations interact during real poker decisions.</p>
+    <div class="two">
+      <div>
+        <h3>What readers will explore</h3>
+        <ul class="clean">
+          <li>Why position matters and how it affects available choices.</li>
+          <li>How pressure influences decisions and responses.</li>
+          <li>How hand strength changes as the situation develops.</li>
+          <li>How to recognize, evaluate, and manage risk.</li>
+          <li>How the four obstacles interact during a poker hand.</li>
+          <li>How to make more deliberate decisions rather than simply reacting.</li>
+        </ul>
+      </div>
+      <div id="contents">
+        <h3>Inside the 20-chapter book</h3>
+        <ol class="toc">
+          <li>Why Players Struggle to Succeed at Hold'em</li>
+          <li>The Four Obstacles: An Overview</li>
+          <li>Why Position Is an Obstacle</li>
+          <li>The Problems Created by Poor Positional Understanding</li>
+          <li>Overcoming the Position Obstacle</li>
+          <li>Why Pressure Is an Obstacle</li>
+          <li>The Problems Created by Poor Pressure Management</li>
+          <li>Overcoming the Pressure Obstacle</li>
+          <li>Why Hand Strength Is an Obstacle</li>
+          <li>The Problems Created by Misjudging Hand Strength</li>
+          <li>Overcoming the Hand Strength Obstacle</li>
+          <li>Why Risk Is an Obstacle</li>
+          <li>The Problems Created by Poor Risk Management</li>
+          <li>Overcoming the Risk Obstacle</li>
+          <li>How the Four Obstacles Interact</li>
+          <li>Applying the Four Obstacles to a Poker Hand</li>
+          <li>Recognizing the Obstacle Before Making the Decision</li>
+          <li>From Recognizing Obstacles to Overcoming Them</li>
+          <li>The Four Obstacles in Real-World Play</li>
+          <li>Your Path to Hold'em Success</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="kicker">Who this book is for</p>
+    <h2>For the Player Who Wants to Think More Clearly About Poker.</h2>
+    <div class="two">
+      <div>
+        <p>This book is for Texas Hold'em players who know the rules but want a more organized way to evaluate the situations they encounter.</p>
+        <p>It may be useful for players who find themselves making repeated positional mistakes, struggling against aggression, overvaluing hands, or committing chips without fully considering the risk.</p>
+      </div>
+      <div>
+        <p>It is also for readers who prefer a framework they can return to and apply across different hands, rather than a collection of disconnected tips.</p>
+        <p class="muted">This is an educational poker strategy book—not a guarantee of winnings. Poker involves uncertainty, and individual results vary.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="buy" id="amazon-link-needed">
+      <p class="kicker">The complete book</p>
+      <h2>The Four Obstacles to Hold'em Success</h2>
+      <p>Position. Pressure. Hand Strength. Risk. Learn to recognize the challenges shaping your decisions and develop a more deliberate approach to Texas Hold'em.</p>
+      <a class="cta" href="https://www.amazon.com/dp/B0HRSM39F9" target="_blank" rel="noopener">View The Four Obstacles on Amazon</a>
+      <div class="note">Amazon listing: B0HRSM39F9</div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <strong>The Four Obstacles to Hold'em Success</strong> · Jack Powers<br>
+    Educational and informational content. Poker involves risk. No winning results are guaranteed.<br>
+    © 2026 Jack Powers. All rights reserved.
+  </div>
+</footer>
+</body>
+</html>
