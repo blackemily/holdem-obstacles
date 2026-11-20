@@ -32,7 +32,7 @@ h1 span{color:var(--gold2)}
 .cta{display:inline-block;background:var(--gold);color:#17170f;text-decoration:none;padding:15px 24px;border-radius:3px;font:700 13px Arial,sans-serif;letter-spacing:.08em;text-transform:uppercase;margin:14px 10px 0 0}
 .cta:hover{background:var(--gold2)}
 .cta.secondary{background:transparent;border:1px solid var(--gold);color:var(--gold2)}
-.book-art{min-height:390px;display:flex;justify-content:center;align-items:center;perspective:1000px}
+.book-art{display:flex;justify-content:center;align-items:center}.cover-image{display:block;width:min(100%,390px);height:auto;border:1px solid rgba(240,217,158,.35);box-shadow:18px 22px 42px #050806;border-radius:3px}.cover-link{display:block;max-width:390px;margin:auto}
 .book{width:245px;height:340px;padding:26px 22px;background:linear-gradient(145deg,#253c2d,#101812 70%);border:1px solid #71816b;box-shadow:22px 24px 45px #050806;transform:rotateY(-13deg) rotateZ(-2deg);position:relative}
 .book:before{content:"";position:absolute;left:0;top:0;bottom:0;width:13px;background:linear-gradient(90deg,#0b100c,#415a43)}
 .book .mini{font:10px Arial,sans-serif;letter-spacing:.18em;color:var(--gold);text-align:center;margin:20px 0 30px}
@@ -67,7 +67,7 @@ ul.clean li:before{content:"◆";position:absolute;left:3px;top:12px;color:var(-
 .buy p{max-width:680px;margin:0 auto;color:#d0ccc2}
 .note{font:13px/1.5 Arial,sans-serif;color:var(--muted);margin-top:18px}
 footer{padding:30px 0 48px;color:var(--muted);font:13px/1.6 Arial,sans-serif}
-@media(max-width:760px){.hero-grid,.two{grid-template-columns:1fr}.book-art{min-height:340px}.four{grid-template-columns:1fr}.toc{columns:1}.hero{padding:54px 0}.book{transform:none}nav .navlinks{display:none}}
+@media(max-width:760px){.hero-grid,.two{grid-template-columns:1fr}.book-art{min-height:0}.cover-image{width:min(100%,340px)}.four{grid-template-columns:1fr}.toc{columns:1}.hero{padding:54px 0}.book{transform:none}nav .navlinks{display:none}}
 </style>
 </head>
 <body>
@@ -92,14 +92,11 @@ footer{padding:30px 0 48px;color:var(--muted);font:13px/1.6 Arial,sans-serif}
       <a class="cta" href="https://www.amazon.com/dp/B0HRSM39F9" target="_blank" rel="noopener">View the Book on Amazon</a>
       <a class="cta secondary" href="#sample">Read a Sample</a>
     </div>
-    <div class="book-art" aria-label="Decorative book-cover mockup">
-      <div class="book">
-        <div class="mini">A PRACTICAL FRAMEWORK</div>
-        <h2>THE FOUR<br>OBSTACLES<br>TO HOLD'EM<br>SUCCESS</h2>
-        <div class="rule"></div>
-        <div class="book-sub">A Practical Framework<br>for Better Poker Decisions</div>
-        <div class="author">JACK POWERS</div>
-      </div>
+    <div class="book-art">
+      <a class="cover-link" href="https://www.amazon.com/dp/B0HRSM39F9" target="_blank" rel="noopener" aria-label="View The Four Obstacles to Hold'em Success on Amazon">
+        <img class="cover-image" src="assets/four-obstacles-cover.jpg" alt="The Four Obstacles to Hold'em Success by Jack Powers — official book cover">
+      </a>
+    </div>
     </div>
   </div>
 </div>
